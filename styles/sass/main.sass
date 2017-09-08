@@ -1,15 +1,16 @@
+@import "typography"
 
 $blue: #004990
 //$blue: #117EB4
 $black: #001923
 
 body
+  font-family: 'ITCFranklinGothic-Book', sans-serif
   font-size: 18px
   position: relative
   margin: 0
   min-height: 100vh
   padding-bottom: 6rem
-  background-color: #F6FBFF
 
 a:focus
   outline-color: transparent
@@ -32,8 +33,8 @@ h3 > a
     position: absolute
     width: 30px
     height: 30px
-    top: -5px
-    left: -40px
+    top: -1px
+    left: -33px
     color: $blue
     line-height: 30px
     text-align: center
@@ -46,8 +47,8 @@ h3 > a
       position: absolute
       width: 30px
       height: 30px
-      top: -5px
-      left: -40px
+      top: -3px
+      left: -33px
       color: $blue
       line-height: 30px
       text-align: center
@@ -70,7 +71,7 @@ h3 > a
     &::before
       content: '+'
       display: block
-      top: 5px
+      top: 10px
       left: 11px
       line-height: 30px
       text-align: center
@@ -80,7 +81,7 @@ h3 > a
       &::before
         content: '-'
         display: block
-        top: 5px
+        top: 8px
         left: 11px
         line-height: 30px
         text-align: center
@@ -175,12 +176,21 @@ td.large
     border-radius: 3px
     padding: 0px
 
+.navbar-default
+  box-shadow: 0 0 20px rgba($blue, .2)
+
+.navbar-default .navbar-nav > li > a
+  color: rgba(#004990, 0.6)
+
+.navbar-default .navbar-nav > li > a:hover
+  color: $blue
+
 .navbar-brand img
   margin-bottom: 0
 
 .navbar-brand
-  background-image: url('../../images/so-logo.svg')
-  //background-image: url('[[file:logo]]')
+  //background-image: url('../../images/so-logo.svg')
+  background-image: url('[[file:logo]]')
   background-repeat: no-repeat
   background-position: center
   width: 40px
@@ -195,13 +205,11 @@ td.large
   .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand
     margin-left: 15px
 
-//.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand
-  margin-left: 10px
 
 .jumbotron
   background-color: $blue
-  background-image: url('../../images/hero-bg.jpg')
-  //background-image: url('[[image:hero_bg]]')
+  //background-image: url('../../images/hero-bg.jpg')
+  background-image: url('[[image:hero_bg]]')
   background-size: cover
   background-position: center
   color: white
@@ -243,10 +251,6 @@ td.large
   margin: 0
   border: none
   height: 50px
-
-//@media (max-width: 1024px)
-  .navbar
-    height: auto
 
 .dropdown-menu
   font-size: 18px
@@ -296,7 +300,6 @@ td.large
   transition: 300ms ease
   text-align: center
   width: 250px
-  //margin: 0 3px
   color: white
   border-radius: 3px
   &:hover
@@ -306,7 +309,6 @@ td.large
 @media (max-width: 990px)
   .btnHome
     width: 220px
-    //text-align: center
 
 .staff-card
   border: 2px solid #eee
@@ -345,20 +347,14 @@ td.large
   height: 100%
 
 .section-sidebar > .nav > li > a:hover
-  //opacity: .8
-  color: darken($blue, 10%)
   background: transparent
+  text-decoration: underline
 
 a.back-to-top
   color: $blue
   font-size: 14px
-  //color: white
   display: block
   margin-top: 30px
-  transition: 300ms
-  &:hover
-    text-decoration: none
-    color: darken($blue, 10%)
 
 .navbar-default
   background-color: #fff
@@ -385,19 +381,12 @@ a.back-to-top
   background-color: #fff
   color: $blue
 
-//  .navbar-right
-    display: none !important
-
-//@media (min-width: 768px) and (max-width: 1024px)
-  .collapse
-     display: none !important
-
 .footerSpace
   margin-top: 300px
 
 footer
-  background-image: url('../../images/footer.jpg')
-  //background-image: url('[[image:footer]]')
+  //background-image: url('../../images/footer.jpg')
+  background-image: url('[[image:footer]]')
   background-size: cover
   background-position: center
   padding: 50px 0
@@ -409,6 +398,7 @@ footer
   p
     opacity: .7
   a
+    text-decoration: underline
     color: white
     &:hover
       color: white

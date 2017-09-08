@@ -1,3 +1,4 @@
+<!-- Meta / Head -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,11 +9,14 @@
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
   <meta name="keywords" content="Student Orgs, Student Organizations, Sports Clubs, Academic, Professional, Athletics, Recreation, Fraternity, Sorority, Leadership, LGBTQA, Multicultural, Identity, Employment, Performing, Volunteering, Involvement, Memorial Student Center, Budget, Funding, Spending, Start An Org, Renew Org, Dates, Resources, Publicity, UW-Stout, School, University, Policies, Office Staff, OrgSync, Pick One, Find Your One">
   <meta name="description" content="UW-Stout Involvement Center. Get involved. Search this page to learn more about student organizations on the UW-Stout Campus.">
+  <meta name="author" content="Noah Delagardelle">
   <title>Student Orgs Resources</title>
   <meta property="og:image" content="[[image:thumbnail]]">
-  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="[[file:favicon]]" type="image/x-icon">
   <!-- Bootstrap -->
-  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="[[file:bootstrap]]">
+  <link rel="stylesheet" href="[[file:main_css]]"> -->
+  <link rel="stylesheet" href="styles/css/bootstrap.min.css">
   <link rel="stylesheet" href="styles/css/main.css">
   <script src='https://orgsync.com/widgets/bootstrap.js?school_id=231' async></script>
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -22,16 +26,17 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
+<!-- end Meta / Head -->
 
 <!-- Header -->
 
 <body>
-  <!-- end header -->
+<!-- end header -->
 
   <nav id="custom-bootstrap-menu" class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
       <div class="navbar-header">
-        <a class="navbar-brand" href="index.html">&nbsp;</a>
+        <a class="navbar-brand" href="[[page:home]]">&nbsp;</a>
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar">&nbsp;</span>
@@ -44,11 +49,11 @@
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Quick Find<span class="caret">&nbsp;</span></a>
             <ul class="dropdown-menu">
-              <li><a href="calendar.html">Student Org Calendar</a></li>
-              <li><a href="news.html">Student Org News</a></li>
-              <li><a href="existing_org.html#reserve-space">Make a Reservation</a></li>
-              <li><a href="existing_org.html#renew-an-org">Renew My Org</a></li>
-              <li><a href="existing_org.html#finances">Apply for Funding</a></li>
+              <li><a href="[[page:calendar]]">Student Org Calendar</a></li>
+          		<li><a href="[[page:news]]">Student Org News</a></li>
+          		<li><a href="[[page:existing_orgs]]#reserve-space">Make a Reservation</a></li>
+          		<li><a href="[[page:existing_orgs]]#renew-an-org">Renew My Org</a></li>
+          		<li><a href="[[page:existing_orgs]]#finances">Apply for Funding</a></li>
               <li><a target="_blank" href="https://orgsync.com/11321/forms/62800">Submit to Campus Life Today</a></li>
               <li><a target="_blank" href="https://orgsync.com/11321/forms/75237">Print a Poster</a></li>
               <li><a target="_blank" href="https://orgsync.com/11321/forms/73890">Submit an ad to the MSC Digital Signage</a></li>
@@ -67,9 +72,9 @@
     <div class="container">
       <h1>Student Organizations</h1>
       <p>Welcome to your online community of resources!</p>
-      <a href="start_an_org.html" type="button" class="btn btnHome btn-lg">Start an Organization</a>
-      <a href="existing_org.html" type="button" class="btn btnHome btn-lg">Manage an Organization</a>
-      <a href="advisors.html" type="button" class="btn btnHome btn-lg">Advise an Organization</a>
+      <a href="[[page:start_an_org]]" type="button" class="btn btnHome btn-lg">Start an Organization</a>
+      <a href="[[page:existing_orgs]]" type="button" class="btn btnHome btn-lg">Manage an Organization</a>
+      <a href="[[page:advisors]]" type="button" class="btn btnHome btn-lg">Advise an Organization</a>
     </div>
   </header>
 
@@ -104,9 +109,13 @@
   </footer>
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- <script src="js/jquery.min.js"></script> -->
+  <script src="[[file:jquery_js]]"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!-- <script src="js/bootstrap.min.js"></script> -->
+  <script src="[[file:bootstrap_js]]"></script>
+  <!-- <script src="js/functions.js"></script> -->
+  <script src="[[file:functions]]"></script>
 </body>
 
 </html>
